@@ -11,7 +11,8 @@ pacman-mirrors -i -c China -m rank
 
 ```txt
 [archlinuxcn]
-SigLevel = Optional TrustedOnly
+#SigLevel = Optional TrustedOnly
+SigLevel = Optional TrustAll
 #中科大源
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 #清华源
@@ -29,6 +30,10 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### 3 更新源列表
 ```
 pacman-mirrors -g
+```
+
+```
+pacman -S archlinuxcn-keyring
 ```
 
 #### 更新pacman基本系统
@@ -55,3 +60,5 @@ export XMODIFIERS="@im=fcitx"
 ```
 
 ## 安装goole-chrome
+
+
