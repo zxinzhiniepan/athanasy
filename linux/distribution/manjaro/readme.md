@@ -49,7 +49,7 @@ pacman -S vim
 
 ## 安装输入法
 ```
-pacman -S fcitx fcitx-qt4 fcitx-configtool fcitx-google-pinyin
+pacman -S fcitx fcitx-qt4 fcitx-configtool fcitx-googlepinyin
 ```
 配置输入法
 vim ~/.xprofile
