@@ -82,9 +82,25 @@ livecd ~ # lshw
        capabilities: platform
 >```
 
-#### 
+#### 设计分区表
+|分区名|大小|作用|
+|-|-|-|
+|/|-|-|
+|/boot|-|-|
+|/home|-|-|
+|/var|-|-|
+|/opt|-|-|
+|/tmp|-|-|
 
 ## 配置安装环境
+
+#### 配置fstab
+https://blog.yangmame.org/Gentoo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
+wget https://raw.githubusercontent.com/YangMame/Gentoo-Installer/master/genfstab
+chmod +x genfstab
+#可选 cp genfstab /usr/bin/
+./genfstab / > /etc/fstab
+nano /etc/fstab #最好检查下此文件,删掉无用挂载点
 
 ## 安装
 
